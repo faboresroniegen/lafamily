@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="LA FAMILIA DUMAGUETE 2.0 - Reimagining Friends Connections">
+    <meta name="theme-color" content="#000000">
+    <title>My sites</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Full page background slideshow -->
+    <div class="fullpage-slideshow">
+        <div class="fullpage-slide active"></div>
+        <div class="fullpage-slide"></div>
+        <div class="fullpage-slide"></div>
+        <div class="fullpage-slide"></div>
+        <div class="fullpage-slide"></div>
+        <div class="fullpage-slide"></div>
+        <div class="fullpage-slide"></div>
+        <div class="fullpage-slide"></div>
+    </div>
+    <div class="poster-container">
+        <div class="background-slideshow">
+            <div class="slide active" style="background-image: url('pic1.jpg');"></div>
+            <div class="slide" style="background-image: url('pic2.jpg');"></div>
+            <div class="slide" style="background-image: url('pic3.jpg');"></div>
+            <div class="slide" style="background-image: url('pic8.jpg');"></div>
+            <div class="slide" style="background-image: url('pic5.jpg');"></div>
+            <div class="slide" style="background-image: url('pic6.jpg');"></div>
+            <div class="slide" style="background-image: url('pic7.jpg');"></div>
+            <div class="slide" style="background-image: url('pic4.jpg');"></div>
+        </div>
+        
+        <div class="overlay"></div>
+        
+        <div class="content">
+            <h1 class="title">LA FAMILIA DUMAGUETE
+            <span class="version-container">
+                <span class="version-static">2.</span>
+                <span class="version-digit typing">0</span>
+            </span>
+        </h1>
+            <h2 class="subtitle">Reimagining Friends Connections</h2>
+            
+            <p class="description">
+                Where friendship meets innovation. LA FAMILIA DUMAGUETE 2.0 brings together the best of tradition and technology to strengthen bonds and create lasting memories with your closest friends.
+            </p>
+            
+            <div class="features">
+                <button class="feature" data-href="#">Digital Hangouts</button>
+                <button class="feature" data-href="#event-planning">Event Planning</button>
+                <button class="feature" id="shareMemoriesBtn" data-href="#share-memories">Share Memories</button>
+                <button class="feature" id="friendshipGoalsBtn" data-href="#friendship-goals">Friendship Goals</button>
+            </div>
+            
+            <button class="cta-button">JOIN THE CIRCLE</button>
+            
+     </div>
+    </div>
+
+    <!-- Friendship Goals Popup Modal -->
+    <div class="goals-modal-overlay" id="goalsModalOverlay">
+        <div class="goals-modal-container">
+            <div class="goals-modal-header">
+                <h2 class="goals-modal-title">
+                    <i class="fas fa-heart"></i> Friendship Goals
+                </h2>
+                <button class="goals-modal-close-btn" id="goalsModalCloseBtn">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+
+            <div class="goals-modal-body">
+                <div class="goals-section">
+                    <h3 class="goals-section-title">
+                        <i class="fas fa-handshake"></i>  Friendship Goals
+                    </h3>
+                    <div class="goals-grid">
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Support Each Other</h4>
+                            <p>Being there to encourage and help through every challenge</p>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-laugh"></i>
+                            </div>
+                            <h4>Make Great Memories</h4>
+                            <p>Creating unforgettable moments together</p>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h4>Be There in Hard Times</h4>
+                            <p>Providing support when it matters most</p>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>Celebrate Wins Together</h4>
+                            <p>Sharing in each other's successes and achievements</p>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Communicate Openly</h4>
+                            <p>Having honest and meaningful conversations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goals-divider"></div>
+
+                <div class="goals-section">
+                    <h3 class="goals-section-title">
+                        <i class="fas fa-crown"></i> Best Friend Goals
+                    </h3>
+                    <div class="goals-grid">
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <h4>Lifetime Connection</h4>
+                            <p>A friendship that lasts forever</p>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4>Trust & Loyalty</h4>
+                            <p>Unwavering devotion and complete trust</p>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h4>Never Grow Apart</h4>
+                            <p>Maintaining bond through life's changes</p>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-ring"></i>
+                            </div>
+                            <h4>Friendship Rings</h4>
+                            <p>Symbols of eternal friendship bonds</p>
+                        </div>
+                        <div class="goal-card">
+                            <div class="goal-icon">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <h4>Be Each Other's Crown</h4>
+                            <p>Lifting each other up and inspiring greatness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Memories Popup Modal -->
+    <div class="memories-modal-overlay" id="memoriesModalOverlay">
+        <div class="memories-modal-container">
+            <div class="memories-modal-header">
+                <h2 class="memories-modal-title">
+                    <i class="fas fa-images"></i> 2021-2026 Best Memories
+                </h2>
+                <button class="memories-modal-close-btn" id="memoriesModalCloseBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="memories-modal-body">
+                <div class="memories-gallery">
+                    <!-- Image/Video Items -->
+                    <div class="memory-item" data-type="image" data-src="pic3.jpg" data-thumb="pic3.jpg">
+                        <div class="memory-thumbnail">
+                            <img src="pic3.jpg" alt="Memory 1" loading="lazy">
+                            <div class="memory-overlay">
+                                <i class="fas fa-image"></i>
+                                <span>Click to view</span>
+                            </div>
+                        </div>
+                        <p class="memory-caption">Best Memories 2021-2026</p>
+                    </div>
+
+                    <div class="memory-item" data-type="video" data-src="vd.mp4" data-thumb="vd.jpg">
+                        <div class="memory-thumbnail">
+                            <img src="vd.mp4" alt="Video 1" loading="lazy">
+                            <div class="memory-overlay">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Click to play</span>
+                            </div>
+                        </div>
+                        <p class="memory-caption">Laag pa more</p>
+                    </div>
+
+                    <div class="memory-item" data-type="image" data-src="unexpected.jpg" data-thumb="unexpected.jpg">
+                        <div class="memory-thumbnail">
+                            <img src="unexpected.jpg" alt="Memory 2" loading="lazy">
+                            <div class="memory-overlay">
+                                <i class="fas fa-image"></i>
+                                <span>Click to view</span>
+                            </div>
+                        </div>
+                        <p class="memory-caption">pakalit ra</p>
+                    </div>
+                    <div class="memory-item" data-type="image" data-src="trios.jpg" data-thumb="trios.jpg">
+                        <div class="memory-thumbnail">
+                            <img src="trios.jpg" alt="Memory 2" loading="lazy">
+                            <div class="memory-overlay">
+                                <i class="fas fa-image"></i>
+                                <span>Click to view</span>
+                            </div>
+                        </div>
+                        <p class="memory-caption">where the shitt</p>
+                    </div>
+
+                    <div class="memory-item" data-type="video" data-src="jul.mp4" data-thumb="jul-thumb.jpg">
+                        <div class="memory-thumbnail">
+                            <img src="jul.mp4" alt="Video 2" loading="lazy">
+                            <div class="memory-overlay">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Click to play</span>
+                            </div>
+                        </div>
+                        <p class="memory-caption">Road Trip - Sunset Views</p>
+                    </div>
+
+                    <div class="memory-item" data-type="image" data-src="summer.jpg" data-thumb="summer.jpg">
+                        <div class="memory-thumbnail">
+                            <img src="summer.jpg" alt="Memory 3" loading="lazy">
+                            <div class="memory-overlay">
+                                <i class="fas fa-image"></i>
+                                <span>Click to view</span>
+                            </div>
+                        </div>
+                        <p class="memory-caption">Picnic Time with Friends</p>
+                    </div>
+
+                    <div class="memory-item" data-type="video" data-src="band.mp4" data-thumb="band.jpg">
+                        <div class="memory-thumbnail">
+                            <img src="band.mp4" alt="Video 3" loading="lazy">
+                            <div class="memory-overlay">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Click to play</span>
+                            </div>
+                        </div>
+                        <p class="memory-caption">Concert Clips - Live Performance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Images and Videos -->
+    <div class="lightbox-overlay" id="lightboxOverlay">
+        <div class="lightbox-container">
+            <button class="lightbox-close-btn" id="lightboxCloseBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-fullscreen-btn" id="lightboxFullBtn" title="Toggle fullscreen">
+                <i class="fas fa-expand"></i>
+            </button>
+            <button class="lightbox-zoom-btn" id="lightboxZoomBtn" title="Toggle zoom">
+                <i class="fas fa-search-plus"></i>
+            </button>
+
+            <!-- (spinner removed for instant gallery open) -->
+
+            <!-- Image Lightbox -->
+            <div class="lightbox-content image-lightbox" id="imageLightbox">
+                <img id="lightboxImage" src="" alt="Memory">
+                <div class="lightbox-nav">
+                    <button class="lightbox-prev" id="lightboxPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="lightbox-counter">
+                        <span id="lightboxCounter">1 / 6</span>
+                    </div>
+                    <button class="lightbox-next" id="lightboxNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Lightbox -->
+            <div class="lightbox-content video-lightbox" id="videoLightbox">
+                <video id="lightboxVideo" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="lightbox-nav">
+                    <button class="lightbox-prev" id="videoPrev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="lightbox-counter">
+                        <span id="videoCounter">1 / 6</span>
+                    </div>
+                    <button class="lightbox-next" id="videoNext">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 class="modal-title">Welcome to LA FAMILIA!</h2>
+                <button class="modal-close-btn" id="modalCloseBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>          
+            <div class="modal-body">
+                <div class="modal-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <p class="modal-message">Thank you for joining our circle of friendship!</p>
+                <div class="modal-submessage">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Friendship for a lifetime</span>
+                    <i class="fas fa-sparkles"></i>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="modal-action-btn" id="modalActionBtn">
+                    <i class="fas fa-check-circle"></i> &nbsp; Continue Journey
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            
+            function nextSlide() {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }           
+    
+            // Add this to your existing script
+            document.querySelectorAll('.feature[data-href]:not(#friendshipGoalsBtn)').forEach(button => {
+                button.addEventListener('click', function() {
+                    const href = this.getAttribute('data-href');
+                    if (href && href !== '#friendship-goals') {
+                        window.location.href = href;
+                    }
+                });
+            });
+
+            // Share Memories Modal functionality
+            const shareMemoriesBtn = document.getElementById('shareMemoriesBtn');
+            const memoriesModalOverlay = document.getElementById('memoriesModalOverlay');
+            const memoriesModalCloseBtn = document.getElementById('memoriesModalCloseBtn');
+            const lightboxOverlay = document.getElementById('lightboxOverlay');
+            const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
+            const memoryItems = document.querySelectorAll('.memory-item');
+
+            // Open memories modal
+            shareMemoriesBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                memoriesModalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Close memories modal
+            memoriesModalCloseBtn.addEventListener('click', function() {
+                memoriesModalOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            // Close when clicking outside modal
+            memoriesModalOverlay.addEventListener('click', function(e) {
+                if (e.target === memoriesModalOverlay) {
+                    memoriesModalOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Lightbox functionality
+            let currentIndex = 0;
+            const allMemories = Array.from(memoryItems);
+
+            // Open lightbox on memory item click (no background preloading)
+            memoryItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    currentIndex = index;
+                    openLightbox(index);
+                });
+            });
+
+            function openLightbox(index) {
+                const memory = allMemories[index];
+                const type = memory.dataset.type;
+                const src = memory.dataset.src;
+                
+                lightboxOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+
+                if (type === 'image') {
+                    showImageLightbox(index);
+                } else {
+                    showVideoLightbox(index);
+                }
+            }
+
+            function showImageLightbox(index) {
+                const imageLightbox = document.getElementById('imageLightbox');
+                const videoLightbox = document.getElementById('videoLightbox');
+                const lightboxImage = document.getElementById('lightboxImage');
+                const lightboxCounter = document.getElementById('lightboxCounter');
+
+                imageLightbox.classList.add('active');
+                videoLightbox.classList.remove('active');
+
+                // Show thumbnail immediately, preload hi-res in background, and auto-fit to viewport
+                const memory = allMemories[index];
+                const thumb = memory.dataset.thumb || (memory.querySelector('img') && memory.querySelector('img').src) || '';
+                const hiRes = memory.dataset.src || thumb;
+
+                // Reset zoom state and show thumbnail instantly
+                lightboxImage.classList.remove('zoomed');
+                lightboxImage.src = thumb;
+                lightboxImage.alt = memory.querySelector('img') ? memory.querySelector('img').alt : `Memory ${index + 1}`;
+                lightboxCounter.textContent = `${index + 1} / ${allMemories.length}`;
+
+                // adjust sizing to viewport
+                function adjustImageFitLocal() {
+                    try {
+                        const img = document.getElementById('lightboxImage');
+                        if (!img) return;
+                        const maxW = Math.max(120, window.innerWidth - 40);
+                        const maxH = Math.max(120, window.innerHeight - 140);
+                        img.style.maxWidth = maxW + 'px';
+                        img.style.maxHeight = maxH + 'px';
+                        if (!img.classList.contains('zoomed')) img.style.transform = 'translate3d(0,0,0) scale(1)';
+                    } catch (e) {}
+                }
+
+                adjustImageFitLocal();
+                lightboxImage.onload = function() {
+                    adjustImageFitLocal();
+                };
+
+                // Preload hi-res and swap silently when ready (no spinner)
+                if (hiRes && hiRes !== thumb) {
+                    const pre = new Image();
+                    pre.onload = function() {
+                        // only swap if user still viewing this index
+                        if (allMemories[currentIndex] === memory) {
+                            lightboxImage.src = hiRes;
+                            adjustImageFitLocal();
+                        }
+                    };
+                    pre.src = hiRes;
+                }
+
+                // Recalculate on viewport resize while lightbox open
+                window.addEventListener('resize', function() {
+                    if (document.getElementById('lightboxOverlay') && document.getElementById('lightboxOverlay').classList.contains('active')) {
+                        adjustImageFitLocal();
+                    }
+                });
+            }
+
+            function showVideoLightbox(index) {
+                const imageLightbox = document.getElementById('imageLightbox');
+                const videoLightbox = document.getElementById('videoLightbox');
+                const lightboxVideo = document.getElementById('lightboxVideo');
+                const videoCounter = document.getElementById('videoCounter');
+
+                // Load and play the video from the clicked memory item
+                const memory = allMemories[index];
+                const src = memory.dataset.src || '';
+
+                videoLightbox.classList.add('active');
+                imageLightbox.classList.remove('active');
+                // Set <source> src and reload the video element
+                const sourceEl = lightboxVideo.querySelector('source');
+                if (sourceEl) {
+                    sourceEl.src = src;
+                } else {
+                    lightboxVideo.src = src;
+                }
+                lightboxVideo.load();
+                // Try to play; some browsers require user gesture
+                lightboxVideo.play().catch(() => {});
+                videoCounter.textContent = `${index + 1} / ${allMemories.length}`;
+            }
+
+            // Lightbox navigation
+            const lightboxPrev = document.getElementById('lightboxPrev');
+            const lightboxNext = document.getElementById('lightboxNext');
+            const videoPrev = document.getElementById('videoPrev');
+            const videoNext = document.getElementById('videoNext');
+
+            function goToPrevious() {
+                currentIndex = (currentIndex - 1 + allMemories.length) % allMemories.length;
+                openLightbox(currentIndex);
+            }
+
+            function goToNext() {
+                currentIndex = (currentIndex + 1) % allMemories.length;
+                openLightbox(currentIndex);
+            }
+
+            lightboxPrev.addEventListener('click', goToPrevious);
+            lightboxNext.addEventListener('click', goToNext);
+            videoPrev.addEventListener('click', goToPrevious);
+            videoNext.addEventListener('click', goToNext);
+
+            // Fullscreen, zoom (double-tap) and touch pan for mobile
+            const lightboxFullBtn = document.getElementById('lightboxFullBtn');
+            const lightboxZoomBtn = document.getElementById('lightboxZoomBtn');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const lightboxContainer = document.querySelector('.lightbox-container');
+
+            function enterFullscreen(elem) {
+                if (elem.requestFullscreen) return elem.requestFullscreen();
+                if (elem.webkitRequestFullscreen) return elem.webkitRequestFullscreen();
+                return Promise.resolve();
+            }
+
+            function exitFullscreen() {
+                if (document.exitFullscreen) return document.exitFullscreen();
+                if (document.webkitExitFullscreen) return document.webkitExitFullscreen();
+                return Promise.resolve();
+            }
+
+            function toggleFullscreen() {
+                if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+                    enterFullscreen(lightboxContainer).catch(()=>{});
+                    lightboxOverlay.classList.add('fullscreen');
+                    lightboxFullBtn.innerHTML = '<i class="fas fa-compress"></i>';
+                } else {
+                    exitFullscreen().catch(()=>{});
+                    lightboxOverlay.classList.remove('fullscreen');
+                    lightboxFullBtn.innerHTML = '<i class="fas fa-expand"></i>';
+                }
+            }
+
+            if (lightboxFullBtn) lightboxFullBtn.addEventListener('click', toggleFullscreen);
+
+            // Zoom toggle (double-click or button)
+            function setTransform(tx = 0, ty = 0, scale = 1) {
+                lightboxImage.style.transform = `translate3d(${tx}px, ${ty}px, 0) scale(${scale})`;
+            }
+
+            let zoomed = false;
+            let scaleFactor = 1.6; // zoom scale
+            let startX = 0, startY = 0, lastX = 0, lastY = 0, isPanning = false;
+
+            function toggleZoom() {
+                if (!lightboxImage) return;
+                zoomed = !zoomed;
+                if (!zoomed) {
+                    lightboxImage.classList.remove('zoomed');
+                    setTransform(0,0,1);
+                    lastX = lastY = 0;
+                } else {
+                    lightboxImage.classList.add('zoomed');
+                    setTransform(0,0,scaleFactor);
+                }
+                // update button icon
+                lightboxZoomBtn.innerHTML = zoomed ? '<i class="fas fa-search-minus"></i>' : '<i class="fas fa-search-plus"></i>';
+            }
+
+            if (lightboxZoomBtn) lightboxZoomBtn.addEventListener('click', toggleZoom);
+
+            // Double-click / double-tap detection
+            let lastTap = 0;
+            if (lightboxImage) {
+                lightboxImage.addEventListener('dblclick', toggleZoom);
+                lightboxImage.addEventListener('touchend', function(e) {
+                    const now = Date.now();
+                    if (now - lastTap < 300) {
+                        e.preventDefault();
+                        toggleZoom();
+                    }
+                    lastTap = now;
+                });
+
+                // Touch/mouse pan when zoomed
+                lightboxImage.addEventListener('touchstart', function(e) {
+                    if (!zoomed) return;
+                    if (e.touches.length !== 1) return;
+                    isPanning = true;
+                    startX = e.touches[0].clientX - lastX;
+                    startY = e.touches[0].clientY - lastY;
+                }, {passive:false});
+
+                lightboxImage.addEventListener('touchmove', function(e) {
+                    if (!isPanning) return;
+                    e.preventDefault();
+                    const x = e.touches[0].clientX - startX;
+                    const y = e.touches[0].clientY - startY;
+                    lastX = x;
+                    lastY = y;
+                    setTransform(x, y, scaleFactor);
+                }, {passive:false});
+
+                lightboxImage.addEventListener('touchend', function() {
+                    isPanning = false;
+                });
+
+                // Mouse pan for desktop
+                lightboxImage.addEventListener('mousedown', function(e) {
+                    if (!zoomed) return;
+                    isPanning = true;
+                    startX = e.clientX - lastX;
+                    startY = e.clientY - lastY;
+                    document.body.style.userSelect = 'none';
+                });
+
+                window.addEventListener('mousemove', function(e) {
+                    if (!isPanning) return;
+                    lastX = e.clientX - startX;
+                    lastY = e.clientY - startY;
+                    setTransform(lastX, lastY, scaleFactor);
+                });
+
+                window.addEventListener('mouseup', function() {
+                    if (isPanning) {
+                        isPanning = false;
+                        document.body.style.userSelect = '';
+                    }
+                });
+            }
+
+            // Close lightbox
+            lightboxCloseBtn.addEventListener('click', function() {
+                lightboxOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+                const lightboxVideo = document.getElementById('lightboxVideo');
+                lightboxVideo.pause();
+            });
+
+            // Close lightbox when clicking outside
+            lightboxOverlay.addEventListener('click', function(e) {
+                if (e.target === lightboxOverlay) {
+                    lightboxOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                    const lightboxVideo = document.getElementById('lightboxVideo');
+                    lightboxVideo.pause();
+                }
+            });
+
+            // Keyboard navigation for lightbox
+            document.addEventListener('keydown', function(e) {
+                if (lightboxOverlay.classList.contains('active')) {
+                    if (e.key === 'ArrowLeft') {
+                        goToPrevious();
+                    } else if (e.key === 'ArrowRight') {
+                        goToNext();
+                    } else if (e.key === 'Escape') {
+                        lightboxOverlay.classList.remove('active');
+                        document.body.style.overflow = '';
+                        const lightboxVideo = document.getElementById('lightboxVideo');
+                        lightboxVideo.pause();
+                    }
+                }
+            });
+
+            // Friendship Goals Popup functionality
+            const friendshipGoalsBtn = document.getElementById('friendshipGoalsBtn');
+            const goalsModalOverlay = document.getElementById('goalsModalOverlay');
+            const goalsModalCloseBtn = document.getElementById('goalsModalCloseBtn');
+
+            // Open goals modal when button is clicked
+            friendshipGoalsBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                goalsModalOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+
+            // Close goals modal with back button
+            goalsModalCloseBtn.addEventListener('click', function() {
+                goalsModalOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+
+            // Close goals modal when clicking outside
+            goalsModalOverlay.addEventListener('click', function(e) {
+                if (e.target === goalsModalOverlay) {
+                    goalsModalOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Close modal with ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && goalsModalOverlay.classList.contains('active')) {
+                    goalsModalOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Friendship Goals Dropdown functionality removed - using modal instead
+        
+      // Modal functionality
+            const ctaButton = document.querySelector('.cta-button');
+            const modalOverlay = document.getElementById('modalOverlay');
+            const modalCloseBtn = document.getElementById('modalCloseBtn');
+            const modalActionBtn = document.getElementById('modalActionBtn');
+            
+            // Show modal when CTA button is clicked
+            ctaButton.addEventListener('click', function(e) {
+                // Create ripple effect
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                // Remove any existing ripple
+                const existingRipple = this.querySelector('.ripple');
+                if (existingRipple) {
+                    existingRipple.remove();
+                }
+                
+                this.appendChild(ripple);
+                
+                // Button click animation
+                this.style.transform = 'scale(0.95)';
+                this.classList.add('ripple');
+                
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                    
+                    // Show modal with smooth animation
+                    setTimeout(() => {
+                        modalOverlay.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }, 100);
+                }, 200);
+            });
+            
+            // Close modal functions
+            function closeModal() {
+                modalOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                // Add subtle close animation
+                modalOverlay.style.opacity = '0';
+                setTimeout(() => {
+                    modalOverlay.style.opacity = '';
+                }, 400);
+            }
+            
+            // Close modal with close button
+            modalCloseBtn.addEventListener('click', closeModal);
+            
+            // Close modal with action button
+            modalActionBtn.addEventListener('click', closeModal);
+            
+            // Close modal when clicking outside
+            modalOverlay.addEventListener('click', function(e) {
+                if (e.target === modalOverlay) {
+                    closeModal();
+                }
+            });
+            
+            // Close modal with ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modalOverlay.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+            
+            // Add hover effect to features
+            const features = document.querySelectorAll('.feature');
+            features.forEach(feature => {
+                feature.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-10px)';
+                    this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+                });
+                
+                feature.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+
+                // Touch support for mobile
+                feature.addEventListener('touchstart', function() {
+                    this.style.transform = 'translateY(-10px) scale(1.05)';
+                    this.style.boxShadow = '0 10px 20px rgba(78, 205, 196, 0.3)';
+                });
+                
+                feature.addEventListener('touchend', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            }); 
+        });
+    </script>
+
+    <!-- Background audio and control -->
+    <audio id="bgAudio" loop preload="auto">
+        <source src="keenan.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button id="audioToggleBtn" class="audio-toggle" aria-pressed="false" title="Play music">
+        <i class="fas fa-music"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">official <span class="footer-creator">website 2026</span></p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript files -->
+    <script src="script.js"></script>
+    <script src="audio.js"></script>
+</body>
+</html>
